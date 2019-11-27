@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Filmadict</title>
+  <link rel="stylesheet" href="style-copy.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+  <div class="home">
+    <div class="header">
+      <nav>
+        <div class="menu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">LOGO</div>
+
+        <div class="menu">
+          <ul>
+            <li id="selected"><a href="index.html">Home</a></li>
+            <li><a href="recommendations.html">Recommendations</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <img src="images/cinephile.jpg" width="250px">
+      <h3>Introduction</h3>
+      <p>
+        Cinephile is a page created for movie or film recommendations based on your mood or in what you want to see in that concrete moment in order to bring the best experience to you. Also, it prevents you from wasting too much time looking for the best movie to watch.
+      </p>
+      <h3>Suggestions</h3>
+      <p>
+        If you want just a recommendation, go to the
+        <a href="recommendations.html" recomm = "Look for your film!"><i>recommendations</i></a>
+        page and search for what you want thanks to the menu. If you want to know something more about this page and about me, go to the
+        <a href="aboutme.html" aboutme = ""><i>about me</i></a>
+        page and finally, if you want to contact me or recommend me anything, check the
+        <a id="contact" href="contact.html"><i>contact</i></a>
+        page! And welcome again to Cinephile.
+      </p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  // Menu-toggle button
+
+  $(document).ready(function() {
+    $(".menu-icon").on("click", function() {
+      $("nav ul").toggleClass("showing");
+    });
+  });
+
+  // Scrolling Effect
+
+  $(window).on("scroll", function() {
+    if($(window).scrollTop()) {
+      $('nav').addClass('black');
+    }
+
+    else {
+      $('nav').removeClass('black');
+    }
+  })
+
+  </script>
+</body>
+
+<footer>
+  <a href="#"><i class="fab fa-facebook"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-youtube"></i></a>
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+</footer>
+
+</html>

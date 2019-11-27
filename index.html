@@ -2,51 +2,65 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Filmadict</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   </head>
   <body>
-<!--        Navigation          -->
-    <div class="header">
-      <nav>
-        <div class="logo">
-          <img src="images/logo.png" width="100px">
-        </div>
+    <div class="home">
+      <!--        Navigation          -->
+      <div class="header" id="home-header">
+        <nav>
+          <div class="logo">
+            <img src="images/logo.png" alt="logo" width="100px">
+          </div>
 
-        <div class="menu">
-          <ul>
-            <li id="selected"><a href="index.html">Home</a></li>
-            <li><a href="recommendations.html">Recommendations</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+          <div class="menu">
+            <ul>
+              <li id="selected"><a href="index.html">Home</a></li>
+              <li><a href="recommendations.html">Recommendations</a></li>
+              <li><a href="aboutme.html">About me</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!--    xxx   Navigation    xxx   -->
+
+      <!--        Main content          -->
+
+      <div class="main-content">
+        <img src="images/cinephile.jpg" width="250px">
+        <h3>Introduction</h3>
+        <p>
+          Cinephile is a page created for movie or film recommendations based on your mood or in what you want to see in that concrete moment in order to bring the best experience to you. Also, it prevents you from wasting too much time looking for the best movie to watch.
+        </p>
+        <h3>Suggestions</h3>
+        <p>
+          If you want just a recommendation, go to the
+          <a href="recommendations.html" recomm = "Look for your film!"><i>recommendations</i></a>
+          page and search for what you want thanks to the menu. If you want to know something more about this page and about me, go to the
+          <a href="aboutme.html" aboutme = ""><i>about me</i></a>
+          page and finally, if you want to contact me or recommend me anything, check the
+          <a id="contact" href="contact.html"><i>contact</i></a>
+          page! And welcome again to Cinephile.
+        </p>
+      </div>
     </div>
-<!--    xxx   Navigation    xxx   -->
 
-<!--        Main content          -->
+    <!--    xxx   Main content    xxx   -->
 
-    <div class="welcome">
-      <h2>Welcome</h2>
-    </div>
+    <script type="text/javascript" src="topbar.js"></script>
 
-    <div class="content">
-      <img src="images/cinephile.jpg" width="250px">
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
-      <p>
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-      </p>
-    </div>
-<!--    xxx   Main content    xxx   -->
   </body>
 
   <footer>
-    <p>Social media</p>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
   </footer>
 </html>

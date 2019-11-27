@@ -1,0 +1,295 @@
+/* ------ Navigation ------ */
+div.header{
+  width: 100%;
+  height: 80px;
+  background: url(images/background6.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+div.header nav{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0px 50px;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  /* font-weight: lighter; */
+}
+
+@media only screen and (max-width: 780px) {
+  div.header nav, div.header nav ul{
+    flex-direction: column;
+  }
+}
+
+div.header nav div.logo{
+  height: 100px;
+  float: left;
+  font-size: 12px;
+}
+
+div.header nav ul{
+  list-style: none;
+  float: right;
+  display: flex;
+}
+
+div.header nav ul li{
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.header nav ul li:hover{
+  background-color: #DA70D6;
+}
+
+div.header nav a{
+  line-height: 30px;
+  color: black;
+  padding: 0px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li#selected{
+  font-style: italic;
+}
+
+body{
+  margin: 0px;
+}
+
+/* --xxx-- Navigation --xxx-- */
+
+
+/* ----- Main content ------ */
+
+div.welcome{
+  width: 100%;
+  background: url('welcome.jpg');
+  background-size: cover;
+  height: 80vh;
+}
+
+div.welcome h2{
+  text-align: center;
+  font-size: 4em;
+  font-style: italic;
+  font-family: georgia;
+}
+
+div.main-content{
+  margin: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+div.main-content img{
+  display: flex;
+  float: right;
+}
+
+div.main-content a{
+  text-decoration: none;
+  color: black;
+}
+
+/* a[recomm]::after{
+  content: "Look for your film!";
+  display: flex;
+  position: relative;
+  background-color: #7f8c8d;
+  padding: 1px 8px;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 120px;
+  white-space: nowrap;
+} */
+
+/* --xxx-- Main content --xxx-- */
+
+
+/* ---- Recommendations ---- */
+
+div.content-recomm{
+  width: 100%;
+}
+
+div.films{
+  width: 70%;
+  float: right;
+  margin: 25px;
+}
+
+div.menu-recomm{
+  float: left;
+  margin: 50px;
+  list-style: none;
+  text-decoration: none;
+  width: 20%;
+  min-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item{
+  border-top: 1px solid #8e44ad;
+  overflow: hidden;
+}
+
+.option{
+  text-decoration: none;
+  display: block;
+  padding: 16px 20px;
+  background: #9b59b6;
+  color: white;
+  position: relative;
+}
+
+.submenu{
+  background: black;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s;
+}
+
+.submenu a{
+  text-decoration: none;
+  display: block;
+  padding: 16px 26px;
+  color: white;
+  font-size: 14px;
+  margin: 4px 0px;
+  position: relative;
+}
+
+.submenu a::before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #9b59b6;
+  left: 0;
+  top: 0;
+  transition: 0.1s;
+  opacity: 0;
+}
+
+.submenu a:hover::before{
+  opacity: 1;
+}
+
+.item:target .submenu{
+  max-height: 25em;
+}
+
+/* --xxx-- Recommendations --xxx-- */
+
+/* --------- Contact --------- */
+
+div.container-contact{
+  margin-left: 10%;
+  margin-right: 10%;
+  background: url('background-cintas.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form.recommend{
+  margin: auto;
+  width: 400px;
+  background: white;
+  height: 580px;
+  padding: 40px 40px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-image: repeating-linear-gradient(140deg, #CAEBFD, #F2CAFD, #CAEBFD, #F2CAFD, #CAEBFD, #F2CAFD);
+}
+
+div.input{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0px;
+}
+
+div.input input{
+  font-size: 15px;
+  color: black;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding-left: 5px;
+  height: 50px;
+}
+
+.button{
+  display: block;
+  width: 120px;
+  border-radius: 25px;
+  height: 40px;
+  border: none;
+  background: linear-gradient(120deg, blue, purple);
+  background-size: 200%;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transform: translate(80%);
+  transition: background-position 0.5s;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+
+.button:hover{
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+
+/* ---xxx--- Contact ---xxx--- */
+
+/* ---------- Footer ---------- */
+
+footer{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8e44ad;
+}
+
+footer a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0px 8px;
+}
+
+footer a i{
+  transition: 0.3s;
+}
+
+footer a:hover i{
+  transform: scale(2.2);
+}
+
+/* ---xxx---- Footer ---xxx---- */
