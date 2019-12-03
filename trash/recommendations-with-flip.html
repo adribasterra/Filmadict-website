@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Filmadict</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script type="text/javascript" href="clasifyfilms.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   </head>
   <body>
@@ -34,31 +35,31 @@
         <li class="item" id="mood">
           <a href="#mood" class="option">Mood</a>
           <div class="submenu">
-            <a href="#">Good</a>
-            <a href="#">Heart broken</a>
-            <a href="#">In company</a>
-            <a href="#">Low mood</a>
-            <a href="#">In love</a>
+            <a href="#" id="good">Good</a>
+            <a href="#" id="hb">Heart broken</a>
+            <a href="#" id="incomp">In company</a>
+            <a href="#" id="lowm">Low mood</a>
+            <a href="#" id="inlove">In love</a>
           </div>
         </li>
 
         <li class="item" id="genre">
           <a href="#genre" class="option">Genres</a>
           <div class="submenu">
-            <a href="#">Comedy</a>
-            <a href="#">Terror</a>
-            <a href="#">Thriller</a>
-            <a href="#">Others</a>
+            <a href="#" id="comedy">Comedy</a>
+            <a href="#" id="terror">Terror</a>
+            <a href="#" id="thriller">Thriller</a>
+            <a href="#" id="others">Others</a>
           </div>
         </li>
 
         <li class="item" id="what-you-want">
           <a href="#what-you-want" class="option">What you want</a>
           <div class="submenu">
-            <a href="#">Real events</a>
-            <a href="#">Inspirational</a>
-            <a href="#">Mind-fuckers</a>
-            <a href="#">Don't know</a>
+            <a href="#" id="real">Real events</a>
+            <a href="#" id="inspirat">Inspirational</a>
+            <a href="#" id="mindf">Mind-fuckers</a>
+            <a href="#" id="donutknow">Don't know</a>
           </div>
         </li>
 
@@ -76,35 +77,39 @@
       </div>
       <div class="all-images">
         <div class="images">
-          <div class="front"><img src="images/movies/21.jpg" alt="21 Blackjack"></div>
-          <div class="back">
+          <div class="front">
             <div class="description">
               <h6>21 Blackjack</h6>
               <p class="year">2008</p>
               <!-- <p>Massachusetts Institute of Technology students become experts in card counting and use their skills to earn millions of dollars at Las Vegas casinos.</p> -->
             </div>
           </div>
-        </div>
-
-        <div class="images">
-          <div class="front"><img src="images/movies/22-jump-street.jpg" alt="22 jump street"></div>
           <div class="back">
-            <div class="description">
-              <h6>22 jump street</h6>
-              <p class="year">2014</p>
-              <!-- <p>Two agents work covertly at the university to investigate a new case.</p> -->
-            </div>
+            <img src="images/movies/21.jpg" alt="21 Blackjack">
           </div>
         </div>
 
         <div class="images">
-          <div class="front"><img src="images/movies/127hours.jpg" alt="127 hours"></div>
+          <div class="front">
+            <h6>22 jump street</h6>
+            <p class="year">2014</p>
+            <!-- <p>Two agents work covertly at the university to investigate a new case.</p> -->
+          </div>
           <div class="back">
+            <img src="images/movies/22-jump-street.jpg" alt="22 jump street">
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front">
             <div class="description">
               <h6>127 hours</h6>
               <p class="year">2010</p>
               <!-- <p>Mountaineer Aron Ralston gets trapped under a rock while hiking the Grand Canyon.</p> -->
             </div>
+          </div>
+          <div class="back">
+            <img src="images/movies/127hours.jpg" alt="127 hours">
           </div>
         </div>
 
@@ -129,6 +134,9 @@
             </div>
           </div>
         </div>
+
+      </div>
+      <div class="all-images">
 
         <div class="images">
           <div class="front"><img src="images/movies/black-beauty.jpg" alt="Black beauty"></div>
@@ -185,6 +193,9 @@
           </div>
         </div>
 
+      </div>
+      <div class="all-images">
+
         <div class="images">
           <div class="front"><img src="images/movies/cien-anos-de-perdon.jpg"></div>
           <div class="back">
@@ -240,6 +251,9 @@
           </div>
         </div>
 
+      </div>
+      <div class="all-images">
+
         <div class="images">
           <div class="front"><img src="images/movies/datachment.jpg"></div>
           <div class="back">
@@ -291,6 +305,9 @@
           </div>
         </div>
 
+      </div>
+      <div class="all-images">
+
         <div class="images">
           <div class="front"><img src="images/movies/fight-club.jpg" alt="Fight Club"></div>
           <div class="back">
@@ -340,6 +357,9 @@
             </div>
           </div>
         </div>
+
+      </div>
+      <div class="all-images">
 
         <div class="images">
           <div class="front"><img src="images/movies/hidalgo.jpg"></div>
@@ -399,6 +419,9 @@
           </div>
         </div>
 
+      </div>
+      <div class="all-images">
+
         <div class="images">
           <div class="front"><img src="images/movies/miracles-from-heaven.jpg"></div>
           <div class="back">
@@ -448,6 +471,9 @@
             </div>
           </div>
         </div>
+
+    </div>
+    <div class="all-images">
 
         <div class="images">
           <div class="front"><img src="images/movies/orphan.jpg"></div>
@@ -499,6 +525,9 @@
           </div>
         </div>
 
+    </div>
+    <div class="all-images">
+
         <div class="images">
           <div class="front"><img src="images/movies/reality-high.jpg"></div>
           <div class="back">
@@ -548,6 +577,9 @@
             </div>
           </div>
         </div>
+
+    </div>
+    <div class="all-images">
 
         <div class="images">
           <div class="front"><img src="images/movies/secretariat.jpg"></div>
@@ -599,6 +631,9 @@
           </div>
         </div>
 
+    </div>
+    <div class="all-images">
+
         <div class="images">
           <div class="front"><img src="images/movies/street-dance3.jpg"></div>
           <div class="back">
@@ -648,6 +683,9 @@
             </div>
           </div>
         </div>
+
+    </div>
+    <div class="all-images">
 
         <div class="images">
           <div class="front"><img src="images/movies/the-boy.jpg"></div>
@@ -699,6 +737,9 @@
           </div>
         </div>
 
+    </div>
+    <div class="all-images">
+
         <div class="images">
           <div class="front"><img src="images/movies/the-maze-runner.jpg"></div>
           <div class="back">
@@ -749,6 +790,9 @@
           </div>
         </div>
 
+    </div>
+    <div class="all-images">
+
         <div class="images">
           <div class="front"><img src="images/movies/unbroken.jpg"></div>
           <div class="back">
@@ -798,6 +842,9 @@
             </div>
           </div>
         </div>
+
+    </div>
+    <div class="all-images">
 
         <div class="images">
           <div class="front"><img src="images/movies/war-horse.jpg"></div>
