@@ -1,110 +1,49 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+.all-images{
+  position: relative;
+  width: 190px;
+  height: 280px;
+  display: -webkit-box;
 }
 
-div.header {
-  width: 100%;
-  height: 100vh;
-  background: url(images/welcome.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-
-div.main-content {
-  width: 94%;
-  margin: 4em auto;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: justify;
-}
-
-div.logo {
-  line-height: 60px;
-  position: fixed;
-  float: left;
-  margin: 16px 46px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-div.header nav {
-  position: fixed;
-  width: 100%;
-  line-height: 60px;
-  font-family: Helvetica;
-}
-
-div.header nav ul {
-  line-height: 60px;
-  list-style: none;
-  background: rgba(0, 0, 0, 0);
-  overflow: hidden;
-  color: #fff;
-  padding: 0;
-  text-align: right;
-  margin: 0;
-  padding-right: 40px;
-  transition: 1s;
-}
-
-div.header nav.black ul {
-  background: #000;
-}
-
-div.header nav ul li {
-  display: inline-block;
-  padding: 16px 40px;;
-}
-
-div.header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-}
-
-div.menu-icon {
-  line-height: 60px;
-  width: 100%;
-  background: #000;
-  text-align: right;
+.images{
+  position: relative;
+  width: 190px;
+  height: 280px;
   box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
-  color: #fff;
-  display: none;
+  overflow: hidden;
 }
 
-@media(max-width: 786px) {
-  .logo {
-    position: fixed;
-    top: 0;
-    margin-top: 16px;
-  }
+.images .front{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-family: garamond;
+  margin: auto;
+  transform: translate(0px, -25px);
+}
 
-  nav ul {
-    max-height: 0px;
-    background: #000;
-  }
 
-  nav.black ul {
-    background: #000;
-  }
+.images .back{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: 1.0s;
+  z-index: 1;
+  transform: rotateX(180deg);
+  transform: translate(0px, -305px);
+}
 
-  .showing {
-    max-height: 34em;
-  }
+.images:hover .back{
+  transform: rotateX(-180deg);
+}
 
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 24px;
-    text-align: center;
-  }
-
-  .menu-icon {
-    display: block;
-  }
+.front h6{
+  padding-top: 20px;
 }

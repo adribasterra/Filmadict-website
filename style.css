@@ -1,7 +1,12 @@
-html, body {
-  margin: 0;
-  padding: 0;
+html{
   width: 100%;
+  background-image: url("images/background-html.jpg");
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  background-color: white;
 }
 
 /* ------ Navigation ------ */
@@ -33,7 +38,7 @@ div.logo {
 
 div.header nav {
   position: fixed;
-  width: 100%;
+  width: 80%;
   line-height: 60px;
   font-family: Helvetica;
 }
@@ -101,7 +106,7 @@ div.welcome{
 }
 
 div.main-content{
-  margin: 4em auto;
+  margin: 3em auto;
   font-size: 20px;
   line-height: 30px;
   text-align: justify;
@@ -118,7 +123,7 @@ div.welcome h2{
 div.main-content img{
   display: flex;
   float: right;
-  margin: 80px;
+  margin: 40px;
   margin-top: 20px;
   margin-left: 180px;
 }
@@ -133,12 +138,14 @@ div.main-content a{
 
 /* ---- Recommendations ---- */
 
+/* Menu */
+
 div.content-recomm{
   width: 100%;
 }
 
 div.films{
-  width: 70%;
+  width: 65%;
   float: right;
   margin: 25px;
 }
@@ -148,8 +155,8 @@ div.menu-recomm{
   margin: 50px;
   list-style: none;
   text-decoration: none;
-  width: 20%;
-  min-width: 300px;
+  width: 15%;
+  min-width: 250px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -204,53 +211,87 @@ div.menu-recomm{
   max-height: 25em;
 }
 
-/* .all-images, .images{
-  margin: 0px;
-  padding: 0px;
-}
+/* -x- Menu -x- */
 
-.front{
-  top: 0;
-  left: 0;
+.all-images{
+  position: relative;
   width: 190px;
   height: 280px;
-  margin: 0px;
-  padding: 0px;
-  background: black;
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: 0.5s;
+  display: -webkit-box;
 }
 
-div.images:hover .front{
+.images{
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.images .front{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-family: garamond;
+  margin: auto;
+  transform: translate(0px, -25px);
+}
+
+
+.images .back{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transition: 1.0s;
+  z-index: 1;
+  transform: rotateX(180deg);
+  transform: translate(0px, -305px);
+}
+
+.images:hover .back{
   transform: rotateX(-180deg);
 }
 
-.back{
-  top: 0;
-  left: 0;
-  width: 190px;
-  height: 280px;
-  background: black;
-  backface-visibility: hidden;
-  transform: rotateX(180deg);
-  transition: 0.5s;
+.front h6{
+  padding-top: 20px;
 }
-
-div.images:hover .back{
-  transform: rotate(0deg);
-} */
-
 
 /* --xxx-- Recommendations --xxx-- */
 
 /* --------- About me --------- */
 
 div.content{
-  margin: 40px;
+  margin: 80px;
+  margin-top: 10px;
   font-size: 20px;
   line-height: 30px;
   text-align: justify;
+}
+
+div.content p{
+  text-indent: 20px;
+}
+
+div.content img#about-image{
+  display: flex;
+  float: right;
+  margin: 30px;
+}
+
+div.welcome-gif{
+  margin-top: 30px;
+  background-image: url(images/background.jpg);
+}
+
+div.welcome-gif img#welcome{
+  margin: auto;
+  display: flex;
+
 }
 
 /* ---xxx--- About me ---xxx--- */
@@ -267,6 +308,12 @@ div.container-contact h1{
   padding: 0px;
 }
 
+div.container-contact img{
+  position: absolute;
+  margin: auto;
+  width: 80%;
+}
+
 form.recommend{
   margin: auto;
   width: 400px;
@@ -280,7 +327,6 @@ form.recommend{
 
 div.input{
   border-bottom: 2px solid #adadad;
-  position: relative;
   margin: 30px 0px;
 }
 
@@ -336,7 +382,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #8e44ad;
+  background: #830180;
 }
 
 footer a{
@@ -361,53 +407,3 @@ footer a:hover i{
 }
 
 /* ---xxx---- Footer ---xxx---- */
-
-.all-images{
-  position: relative;
-  width: 190px;
-  height: 280px;
-  display: -webkit-box;
-}
-
-.images{
-  position: relative;
-  width: 190px;
-  height: 280px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.images .front{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  z-index: 1;
-  color: white;
-  text-align: center;
-  font-family: garamond;
-  margin: auto;
-  transform: translate(0px, -25px);
-}
-
-
-.images .back{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: black;
-  transition: 1.0s;
-  z-index: 1;
-  transform: rotateX(180deg);
-  transform: translate(0px, -305px);
-}
-
-.images:hover .back{
-  transform: rotateX(-180deg);
-}
-
-.front h6{
-  padding-top: 20px;
-}
