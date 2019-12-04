@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Filmadict</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="topbar.js"></script>
+    <script type="text/javascript" src="display-movies.js"></script>
 
   </head>
   <body>
@@ -35,36 +37,36 @@
         <li class="item" id="mood">
           <a href="#mood" class="option">Mood</a>
           <div class="submenu">
-            <a href="#">Good</a>
-            <a href="#">Heart broken</a>
-            <a href="#">In company</a>
-            <a href="#">Low mood</a>
-            <a href="#">In love</a>
+            <a id="good" onclick="selected(this);" href="#">Good</a>
+            <a id="hbroken" onclick="selected(this);" href="#">Heart broken</a>
+            <a id="company" onclick="selected(this);" href="#">In company</a>
+            <a id="low" onclick="selected(this);" href="#">Low mood</a>
+            <a id="inlove" onclick="selected(this);" href="#">In love</a>
           </div>
         </li>
 
         <li class="item" id="genre">
           <a href="#genre" class="option">Genres</a>
           <div class="submenu">
-            <a href="#">Comedy</a>
-            <a href="#">Terror</a>
-            <a href="#">Thriller</a>
-            <a href="#">Others</a>
+            <a id="comedy" onclick="selected(this);" href="#">Comedy</a>
+            <a id="terror" onclick="selected(this);" href="#">Terror</a>
+            <a id="thriller" onclick="selected(this);" href="#">Thriller</a>
+            <a id="others" onclick="selected(this);" href="#">Others</a>
           </div>
         </li>
 
         <li class="item" id="what-you-want">
           <a href="#what-you-want" class="option">What you want</a>
           <div class="submenu">
-            <a href="#">Real events</a>
-            <a href="#">Inspirational</a>
-            <a href="#">Mind-fuckers</a>
-            <a href="#">Don't know</a>
+            <a id="realEvents" onclick="selected(this);" href="#">Real events</a>
+            <a id="inspirational" onclick="selected(this);" href="#">Inspirational</a>
+            <a id="mind" onclick="selected(this);" href="#">Mind-fuckers</a>
+            <a id="dontknow" onclick="selected(this);" href="#">Don't know</a>
           </div>
         </li>
 
         <li class="item" id="favs">
-          <a href="#favs" class="option">My favs</a>
+          <a id="favs" href="#" onclick="selected(this);" class="option">My favs</a>
         </li>
       </div>
 
@@ -75,86 +77,257 @@
       <div class="miguitas-pan">
         <p>All</p>
       </div>
-      <div class="images">
-        <img src="images/movies/21.jpg" alt="21 Blackjack">
-        <img src="images/movies/22-jump-street.jpg" alt="22 jump street">
-        <img src="images/movies/127hours.jpg" alt="127 hours">
-        <img src="images/movies/300.jpg" alt="300">
-        <img src="images/movies/a-monster-calls.jpg" alt="A monster calls">
-        <img src="images/movies/black-beauty.jpg" alt="Black beauty">
-        <img src="images/movies/brain-on-fire.jpg">
-        <img src="images/movies/burn-out.jpg">
-        <img src="images/movies/celda211.jpg">
-        <img src="images/movies/changeling.jpg">
-        <img src="images/movies/cien-anos-de-perdon.jpg">
-        <img src="images/movies/coach-carter.jpg">
-        <img src="images/movies/colombiana.jpg" alt="Colombiana">
-        <img src="images/movies/deadpool.jpg">
-        <img src="images/movies/desert-flower.jpg" alt="Desert flower">
-        <img src="images/movies/detachment.jpg">
-        <img src="images/movies/dont-breathe.jpg">
-        <img src="images/movies/exam.jpg">
-        <img src="images/movies/eye-for-an-eye.jpg">
-        <img src="images/movies/fermats-room.jpg">
-        <img src="images/movies/fight-club.jpg" alt="Fight Club">
-        <img src="images/movies/first-match.jpg" alt="First match">
-        <img src="images/movies/flicka.jpg">
-        <img src="images/movies/hachi.jpg">
-        <img src="images/movies/hacksaw-ridge.jpg">
-        <img src="images/movies/hidalgo.jpg">
-        <img src="images/movies/hunter-killer.jpg">
-        <img src="images/movies/in-time.jpg">
-        <img src="images/movies/julias-eyes.jpg">
-        <img src="images/movies/mama.jpg">
-        <img src="images/movies/marley-and-me.jpg">
-        <img src="images/movies/miracles-from-heaven.jpg">
-        <img src="images/movies/murder-orient-express.jpg">
-        <img src="images/movies/nerve.jpg">
-        <img src="images/movies/night-at-the-museum.jpg">
-        <img src="images/movies/number23.jpg">
-        <img src="images/movies/orphan.jpg">
-        <img src="images/movies/pirates-of-the-caribbean.jpg">
-        <img src="images/movies/playing-for-time.jpg">
-        <img src="images/movies/project-x.jpg">
-        <img src="images/movies/real-based.jpg">
-        <img src="images/movies/reality-high.jpg">
-        <img src="images/movies/real-steel.jpg" alt="Real steel">
-        <img src="images/movies/regression.jpg">
-        <img src="images/movies/remember-me.jpg">
-        <img src="images/movies/scorch-trials.jpg">
-        <img src="images/movies/secretariat.jpg">
-        <img src="images/movies/sinister.jpg">
-        <img src="images/movies/sinister2.jpg">
-        <img src="images/movies/sleep-tight.jpg">
-        <img src="images/movies/street-dance2.jpg">
-        <img src="images/movies/street-dance3.jpg">
-        <img src="images/movies/sully.jpg">
-        <img src="images/movies/tall-girl.jpg">
-        <img src="images/movies/the33.jpg">
-        <img src="images/movies/the-body.jpg">
-        <img src="images/movies/the-boy.jpg">
-        <img src="images/movies/the-butterfly-effect.jpg">
-        <img src="images/movies/the-dictator.jpg">
-        <img src="images/movies/the-hangover.jpg">
-        <img src="images/movies/the-internship.jpg">
-        <img src="images/movies/the-maze-runner.jpg">
-        <img src="images/movies/the-mustang.jpg">
-        <img src="images/movies/the-nun.jpg">
-        <img src="images/movies/the-silence-of-the-lambs.jpg">
-        <img src="images/movies/the-sixth-sense.jpg">
-        <img src="images/movies/unbroken.jpg">
-        <img src="images/movies/unfriended2.jpg">
-        <img src="images/movies/veronica.jpg">
-        <img src="images/movies/v-for-vendetta.jpg">
-        <img src="images/movies/walk-ride-rodeo.jpg">
-        <img src="images/movies/war-horse.jpg">
-        <img src="images/movies/winchester.jpg">
-        <img src="images/movies/your-name.jpg">
-      </div>
-    </div>
-    <!--    xxx   Main content    xxx   -->
+      <div class="all-images">
+        <div class="images">
+          <div class="front">
+            <div class="description">
+              <h6>21 Blackjack</h6>
+              <p class="year">2008</p>
+              <!-- <p>Massachusetts Institute of Technology students become experts in card counting and use their skills to earn millions of dollars at Las Vegas casinos.</p> -->
+            </div>
+          </div>
+          <div class="back">
+            <img src="images/movies/21.jpg" class="company good dontknow">
+          </div>
+        </div>
 
-    <script type="text/javascript" src="topbar.js"></script>
+        <div class="images">
+          <div class="front">
+            <div class="description">
+              <h6>22 jump street</h6>
+              <p class="year">2014</p>
+              <!-- <p>Two agents work covertly at the university to investigate a new case.</p> -->
+            </div>
+          </div>
+          <div class="back">
+            <img src="images/movies/22-jump-street.jpg" alt="22 jump street">
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front">
+            <div class="description">
+              <h6>127 hours</h6>
+              <p class="year">2010</p>
+              <!-- <p>Mountaineer Aron Ralston gets trapped under a rock while hiking the Grand Canyon.</p> -->
+            </div>
+          </div>
+          <div class="back">
+            <img src="images/movies/127hours.jpg" alt="127 hours">
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front">
+            <div class="description">
+              <h6>300</h6>
+              <p class="year">2006</p>
+              <!-- <p>480 before Christ. In the battle of the Thermopylae, Leonidas, king of the Greek city of Sparta, leads his 300 brave soldiers against the numerous Persian army.</p> -->
+            </div>
+          </div>
+          <div class="back">
+            <img src="images/movies/300.jpg" alt="300">
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front">
+            <div class="description">
+              <h6>A monster calls</h6>
+              <p class="year">2016</p>
+              <!-- <p>A 12-year-old boy evokes a monster in his imagination and it helps him deal with his miserable life and teaches him to have courage.</p> -->
+            </div>
+          </div>
+          <div class="back">
+            <img src="images/movies/a-monster-calls.jpg" alt="A monster calls">
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front"><img src="images/movies/black-beauty.jpg" alt="Black beauty"></div>
+          <div class="back">
+            <div class="description">
+              <h6>Black beauty</h6>
+              <p class="year">1994</p>
+              <!-- <p>Based on Anna Sewell's novel about a horse in England, and the cruel treatment he suffered at the hands of its owners.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front"><img src="images/movies/brain-on-fire.jpg"></div>
+          <div class="back">
+            <div class="description">
+              <h6>Brain on fire</h6>
+              <p class="year">2016</p>
+              <!-- <p>Biographical film, directed and written by Gerard Barrett, based on Susannah Cahalan Brain on Fire memoir.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front"><img src="images/movies/burn-out.jpg"></div>
+          <div class="back">
+            <div class="description">
+              <h6>Burn out</h6>
+              <p class="year">2017</p>
+              <!-- <p>When his son's mother gets into trouble with the criminal underworld of Paris, a man uses his skills to become a messenger to settle his debt.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front"><img src="images/movies/celda211.jpg"></div>
+          <div class="back">
+            <div class="description">
+              <h6>Celda 211</h6>
+              <p class="year">2009</p>
+              <!-- <p>An inmate organizes a riot and a young guard who is on his first day of service and who, therefore, cannot still identify, pretends to be a prisoner in order to be saved.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front"><img src="images/movies/changeling.jpg"></div>
+          <div class="back">
+            <div class="description">
+              <h6>Changeling</h6>
+              <p class="year">2008</p>
+              <!-- <p>Year 1928. A child disappears without a trace. Months later, the police find him, but when the mother says she is not her son, nobody believes her.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front"><img src="images/movies/cien-anos-de-perdon.jpg"></div>
+          <div class="back">
+            <div class="description">
+              <h6>Cien años de perdón</h6>
+              <p class="year">2016</p>
+              <!-- <p>Six men in disguise and armed assault the headquarters of a bank in Valencia, Spain.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front"><img src="images/movies/coach-carter.jpg"></div>
+          <div class="back">
+            <div class="description">
+              <h6>Coach Carter</h6>
+              <p class="year">2005</p>
+              <!-- <p>A high school basketball coach transforms a losing team, and then faces criticism for pressuring athletes to give more importance to qualifications.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front"><img src="images/movies/colombiana.jpg" alt="Colombiana"></div>
+          <div class="back">
+            <div class="description">
+              <h6>Colombiana</h6>
+              <p class="year">2011</p>
+              <!-- <p>In 1992, Bogotá, a small girl sees the criminal Don Luis and his assistant, Marco, murder their parents. Fifteen years later, the young Cataleya, named after the Colombian orchid, works as a professional killer for her uncle, who lives in Chicago.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front"><img src="images/movies/deadpool.jpg"></div>
+          <div class="back">
+            <div class="description">
+              <h6>Deadpool</h6>
+              <p class="year">2016</p>
+              <!-- <p>An exmercenary who, after having undergone a cruel experiment, acquires the superpower of healing quickly and pretends to take revenge on the man who destroyed his life.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="front"><img src="images/movies/desert-flower.jpg" alt="Desert flower"></div>
+          <div class="back">
+            <div class="description">
+              <h6>Desert flower</h6>
+              <p class="year">2009</p>
+              <!-- <p>Waris Dirie escapes from Somalia to work in London, where a photographer and an agent transform her into a supermodel.</p> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+        <img src="images/movies/22-jump-street.jpg" class="company good comedy dontknow">
+        <img src="images/movies/127hours.jpg" class="realEvents">
+        <img src="images/movies/300.jpg"  class="good low">
+        <img src="images/movies/a-monster-calls.jpg" class="favs mind">
+        <img src="images/movies/black-beauty.jpg" class="realEvents dontknow">
+        <img src="images/movies/brain-on-fire.jpg" class="realEvents inspirational">
+        <img src="images/movies/burn-out.jpg" class="company dontknow">
+        <img src="images/movies/celda211.jpg" class="favs dontknow">
+        <img src="images/movies/changeling.jpg" class="thriller realEvents">
+        <img src="images/movies/cien-anos-de-perdon.jpg" class="favs dontknow">
+        <img src="images/movies/coach-carter.jpg" class="low realEvents dontknow">
+        <img src="images/movies/colombiana.jpg" class="company good dontknow">
+        <img src="images/movies/deadpool.jpg" class="favs dontknow">
+        <img src="images/movies/desert-flower.jpg" class="good realEvents inspirational">
+        <img src="images/movies/detachment.jpg" class="low realEvents inspirational mind">
+        <img src="images/movies/dont-breathe.jpg" class="company terror">
+        <img src="images/movies/exam.jpg" class="company thriller mind">
+        <img src="images/movies/eye-for-an-eye.jpg" class="mind">
+        <img src="images/movies/fermats-room.jpg" class="thriller mind">
+        <img src="images/movies/fight-club.jpg" class="good mind">
+        <img src="images/movies/first-match.jpg" class="good low inspirational">
+        <img src="images/movies/flicka.jpg" class="company dontknow">
+        <img src="images/movies/hachi.jpg" class="favs realEvents">
+        <img src="images/movies/hacksaw-ridge.jpg" class="favs realEvents inspirational">
+        <img src="images/movies/hidalgo.jpg" class="favs low inspirational">
+        <img src="images/movies/hunter-killer.jpg" class="company thriller realEvents mind">
+        <img src="images/movies/in-time.jpg" class="favs inlove dontknow">
+        <img src="images/movies/julias-eyes.jpg" class="company terror">
+        <img src="images/movies/mama.jpg" class="terror">
+        <img src="images/movies/marley-and-me.jpg" class="inlove low">
+        <img src="images/movies/miracles-from-heaven.jpg" class="company realEvents mind">
+        <img src="images/movies/murder-orient-express.jpg" class="company thriller dontknow">
+        <img src="images/movies/nerve.jpg" class="favs low dontknow">
+        <img src="images/movies/night-at-the-museum.jpg" class="company dontknow">
+        <img src="images/movies/number23.jpg" class="thriller mind">
+        <img src="images/movies/orphan.jpg" class="terror mind">
+        <img src="images/movies/pirates-of-the-caribbean.jpg" class="company dontknow">
+        <img src="images/movies/playing-for-time.jpg" class="realEvents">
+        <img src="images/movies/project-x.jpg" class="company comedy dontknow">
+        <img src="images/movies/reality-high.jpg" class="company low">
+        <img src="images/movies/real-steel.jpg" alt="Real steel company good dontknow">
+        <img src="images/movies/regression.jpg" class="terror mind">
+        <img src="images/movies/remember-me.jpg" class="inlove realEvents inspirational">
+        <img src="images/movies/scorch-trials.jpg" class="favs dontknow">
+        <img src="images/movies/secretariat.jpg" class="low realEvents inspirational">
+        <img src="images/movies/sinister.jpg" class="terror mind">
+        <img src="images/movies/sinister2.jpg" class="terror mind">
+        <img src="images/movies/sleep-tight.jpg" class="terror mind dontknow">
+        <img src="images/movies/street-dance2.jpg" class="favs low inlove">
+        <img src="images/movies/street-dance3.jpg" class="favs low inlove">
+        <img src="images/movies/sully.jpg" class="realEvents">
+        <img src="images/movies/tall-girl.jpg" class="low inspirational">
+        <img src="images/movies/the33.jpg" class="realEvents">
+        <img src="images/movies/the-body.jpg" class="company terror thriller mind">
+        <img src="images/movies/the-boy.jpg" class="company terror mind">
+        <img src="images/movies/the-butterfly-effect.jpg" class="thriller mind dontknow">
+        <img src="images/movies/the-dictator.jpg" class="comedy dontknow">
+        <img src="images/movies/the-hangover.jpg" class="comedy low">
+        <img src="images/movies/the-internship.jpg" class="favs low">
+        <img src="images/movies/the-maze-runner.jpg" class="favs">
+        <img src="images/movies/the-mustang.jpg" class="low realEvents">
+        <img src="images/movies/the-nun.jpg" class="terror">
+        <img src="images/movies/the-silence-of-the-lambs.jpg" class="terror favs mind">
+        <img src="images/movies/the-sixth-sense.jpg" class="terror mind">
+        <img src="images/movies/unbroken.jpg" class="low realEvents inspirational">
+        <img src="images/movies/unfriended2.jpg" class="terror">
+        <img src="images/movies/veronica.jpg" class="terror">
+        <img src="images/movies/v-for-vendetta.jpg" class="favs low mind">
+        <img src="images/movies/walk-ride-rodeo.jpg" class="realEvents inspirational dontknow">
+        <img src="images/movies/war-horse.jpg" class="favs" class="inspirational dontknow">
+        <img src="images/movies/winchester.jpg" class="terror">
+        <img src="images/movies/your-name.jpg" class="favs inlove dontknow">
+      </div>
+    <!--    xxx   Main content    xxx   -->
 
   </body>
 

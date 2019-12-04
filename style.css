@@ -52,7 +52,7 @@ div.header nav ul {
   text-align: right;
   margin: 0;
   padding-right: 40px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 div.header nav.black ul {
@@ -217,13 +217,12 @@ div.menu-recomm{
   position: relative;
   width: 190px;
   height: 280px;
-  display: -webkit-box;
 }
 
 .images{
-  position: relative;
   box-sizing: border-box;
   overflow: hidden;
+  display: inline-block;
 }
 
 .images .front{
@@ -285,7 +284,8 @@ div.content img#about-image{
 
 div.welcome-gif{
   margin-top: 30px;
-  background-image: url(images/background.jpg);
+  background-image: url(images/background5.jpg);
+  background-size: contain;
 }
 
 div.welcome-gif img#welcome{
