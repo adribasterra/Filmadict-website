@@ -14,7 +14,7 @@ body {
 div.header {
   position: relative;
   width: 100%;
-  height: 13vh;
+  height: 15vh;
   background: url(images/welcome.jpg);
   background-size: inherit;
   z-index: 100;
@@ -209,6 +209,10 @@ div.menu-recomm{
 
 /* -x- Menu -x- */
 
+.restContent img{
+
+}
+
 .images{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: inline-block;
@@ -289,26 +293,25 @@ div.welcome-gif img#welcome{
 
 /* --------- Contact --------- */
 
-div.container-contact{
-}
-
 div.container-contact h1{
-  margin: 40px;
+  margin: 20px;
   padding: 0px;
   text-align: center;
   font-style: italic;
 }
 
-form.recommend{
+form#recommend{
   margin: auto;
   width: 400px;
   background: white;
-  height: 580px;
-  padding: 40px 40px;
+  height: 480px;
+  padding: 20px 40px;
   border-radius: 20px;
   box-sizing: border-box;
   background-image: repeating-linear-gradient(140deg, white, #83017f, white);
   background-image: radial-gradient(#d299cd63, #d299cd, #9c3b96);
+  margin-bottom: 60px;
+  display: block;
 }
 
 div.input{
@@ -324,7 +327,7 @@ div.input input{
   outline: none;
   background: none;
   padding-left: 5px;
-  height: 50px;
+  height: 40px;
 }
 
 .button{
@@ -356,6 +359,21 @@ div.input input{
   100%{
     background-position: 400%;
   }
+}
+
+div.final-text{
+  margin: 0;
+  display: none;
+  text-align: center;
+  padding: 0;
+}
+
+div.final-text p{
+  width: auto;
+  cursor: pointer;
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 30px;
 }
 
 /* ---xxx--- Contact ---xxx--- */

@@ -126,3 +126,32 @@ $(window).on("scroll", function() {
     }
 
 /* --xxx-- Methods --xxx-- */
+
+
+/* --------- Love gif --------- */
+
+var form = document.getElementsByClassName("contact-form");
+var loveThing = document.getElementsByClassName("final-text");
+
+function displayLoveGif(){
+  for (var i = 0; i < form.length; i++) {
+    form[i].style.display = "none";
+  }
+  for (var i = 0; i < loveThing.length; i++) {
+    loveThing[i].style.display = "block";
+  }
+}
+
+function displayForm(){
+  for (var i = 0; i < form.length; i++) {
+    form[i].style.display = "block";
+  }
+
+  for (var i = 0; i < loveThing.length; i++) {
+    loveThing[i].style.display = "none";
+  }
+}
+
+
+
+/* ---xxx--- Love gif ---xxx--- */

@@ -51,7 +51,6 @@ $(window).on("scroll", function() {
     var mind = document.getElementsByClassName("mind");
     var dontknow = document.getElementsByClassName("dontknow");
 
-/* --xxx-- Variables --xxx-- */
 
 // METHODS
 
@@ -125,4 +124,4 @@ $(window).on("scroll", function() {
       }
     }
 
-/* --xxx-- Methods --xxx-- */
+/* --xxx-- Display films --xxx-- */
