@@ -123,7 +123,7 @@ div.main-content img{
   margin-left: 180px;
 }
 
-div.main-content a{
+div.main-content a, div.content a{
   text-decoration: none;
   color: black;
 }
@@ -209,10 +209,6 @@ div.menu-recomm{
 
 /* -x- Menu -x- */
 
-.restContent img{
-
-}
-
 .images{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: inline-block;
@@ -293,6 +289,12 @@ div.welcome-gif img#welcome{
 
 /* --------- Contact --------- */
 
+div.container-contact{
+  background-image: url(images/film2.png);
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
 div.container-contact h1{
   margin: 20px;
   padding: 0px;
@@ -310,12 +312,11 @@ form#recommend{
   box-sizing: border-box;
   background-image: repeating-linear-gradient(140deg, white, #83017f, white);
   background-image: radial-gradient(#d299cd63, #d299cd, #9c3b96);
-  margin-bottom: 60px;
   display: block;
 }
 
 div.input{
-  border-bottom: 2px solid #adadad;
+  border-bottom: 2px solid #05050561;
   margin: 30px 0px;
 }
 
