@@ -6,16 +6,18 @@ html{
 body {
   width: 80%;
   margin: auto;
-  background-color: white;
+  background-color: #ffffffe8;
 }
 
 /* ------ Navigation ------ */
 
 div.header {
+  position: relative;
   width: 100%;
   height: 13vh;
   background: url(images/welcome.jpg);
   background-size: inherit;
+  z-index: 100;
 }
 
 div#home-header{
@@ -62,6 +64,7 @@ div.header nav.black ul {
 div.header nav ul li {
   display: inline-block;
   padding: 16px 40px;
+  font-variant: petite-caps;
 }
 
 div.header nav ul li a {
@@ -84,25 +87,17 @@ div.menu-icon {
 
 li#selected{
   font-style: italic;
+  font-size: 2em;
 }
 
 /* --xxx-- Navigation --xxx-- */
 
-.welcome h1{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  padding-top: 40vh;
-  color: white;
-  font-style: italic;
-  display: flex;
-  justify-content: space-evenly;
-}
-
 /* ----- Main content ------ */
 
-div.welcome{
-  width: 100%;
+div.home{
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 div.main-content{
@@ -142,12 +137,13 @@ div.main-content a{
 
 div.content-recomm{
   width: 100%;
+  background: white;
 }
 
 div.films{
   width: 65%;
   float: right;
-  margin: 25px;
+  margin: 30px;
 }
 
 div.menu-recomm{
@@ -213,51 +209,46 @@ div.menu-recomm{
 
 /* -x- Menu -x- */
 
-.all-images{
-  position: relative;
-  width: 190px;
-  height: 280px;
-}
-
 .images{
-  box-sizing: border-box;
-  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: inline-block;
+  height: 280px;
+  width: 190px;
+  position: relative;
 }
 
-.images .front{
-  position: relative;
-  top: 0;
-  left: 0;
+div.images img{
   width: 100%;
   height: 100%;
-  background: black;
+  transition: 0.5s;
+}
+
+div.images h6, div.images p{
+  position: absolute;
+  width: 100%;
   z-index: 1;
   color: white;
   text-align: center;
-  font-family: garamond;
-  margin: auto;
-  transform: translate(0px, -25px);
+  opacity: 0;
+  transition: 0.5s;
 }
 
-
-.images .back{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: black;
-  transition: 1.0s;
-  z-index: 1;
-  transform: rotateX(180deg);
-  transform: translate(0px, -305px);
+div.images:hover img{
+  filter: blur(2px) brightness(60%);
+  box-shadow: 0px, 0px, 16px grey;
 }
 
-.images:hover .back{
-  transform: rotateX(-180deg);
+div.images:hover h6, div.images:hover p{
+  opacity: 1;
 }
 
-.front h6{
-  padding-top: 20px;
+div.images h6{
+  top: 30%;
+  font-size: 18px;
+}
+
+div.images p{
+  top: 50%;
 }
 
 /* --xxx-- Recommendations --xxx-- */
@@ -299,19 +290,13 @@ div.welcome-gif img#welcome{
 /* --------- Contact --------- */
 
 div.container-contact{
-  background: url('images/background-cintas.png') no-repeat 50% 50%;
-  background-size: cover;
 }
 
 div.container-contact h1{
-  margin: 0px;
+  margin: 40px;
   padding: 0px;
-}
-
-div.container-contact img{
-  position: absolute;
-  margin: auto;
-  width: 80%;
+  text-align: center;
+  font-style: italic;
 }
 
 form.recommend{
@@ -322,7 +307,8 @@ form.recommend{
   padding: 40px 40px;
   border-radius: 20px;
   box-sizing: border-box;
-  background-image: repeating-linear-gradient(140deg, #CAEBFD, #F2CAFD, #CAEBFD, #F2CAFD, #CAEBFD, #F2CAFD);
+  background-image: repeating-linear-gradient(140deg, white, #83017f, white);
+  background-image: radial-gradient(#d299cd63, #d299cd, #9c3b96);
 }
 
 div.input{

@@ -1,7 +1,31 @@
 
-/* ----- Variables -------- */
+/* --------- Top bar --------- */
 
-  var allFilms = document.getElementsByTagName("img");
+$(document).ready(function() {
+  $(".menu-icon").on("click", function() {
+    $("nav ul").toggleClass("showing");
+  });
+});
+
+$(window).on("scroll", function() {
+  if($(window).scrollTop()) {
+    $('nav').addClass('black');
+  }
+
+  else {
+    $('nav').removeClass('black');
+  }
+})
+
+/* ---xxx--- Top bar ---xxx--- */
+
+
+/* ------ Display films ------ */
+
+
+// VARIABLES
+
+  var allFilms = document.getElementsByClassName("images");
 
   var favs = document.getElementsByClassName("favs");
 
@@ -29,7 +53,7 @@
 
 /* --xxx-- Variables --xxx-- */
 
-/* ------- Methods ------- */
+// METHODS
 
   // Main function
 
@@ -90,9 +114,8 @@
   // Secondary
 
     function display(array){
-      console.log(array);
       for (var i = 0; i < array.length; i++) {
-        array[i].style.display = "inline";
+        array[i].parentElement.style.display = "inline-block";
       }
     }
 
