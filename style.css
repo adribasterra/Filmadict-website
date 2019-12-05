@@ -27,15 +27,24 @@ div#home-header{
   width: 100%;
 }
 
+div#home-header img{
+  margin: 350px;
+  margin-top: 300px;
+}
+
 div.logo {
   line-height: 60px;
   position: fixed;
   float: left;
-  margin: 16px 46px;
+  margin: 0;
+  margin-left: 30px;
   color: white;
   font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 2px;
+  font-size: 33px;
+  letter-spacing: 3px;
+  transform: translate(20px, -27px);
+  font-variant: petite-caps;
+  font-family: georgia;
 }
 
 div.header nav {
@@ -282,7 +291,6 @@ div.welcome-gif{
 div.welcome-gif img#welcome{
   margin: auto;
   display: flex;
-
 }
 
 /* ---xxx--- About me ---xxx--- */
