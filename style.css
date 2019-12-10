@@ -392,6 +392,7 @@ footer{
   width: 100%;
   display: flex;
   justify-content: center;
+  color: white;
   align-items: center;
   background: #830180;
 }
